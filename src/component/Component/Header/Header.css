@@ -1,0 +1,15 @@
+.header{
+ margin: 25px;
+}
+.header img{
+    width: 200px;
+}
+.login a{
+   color: black;
+   margin-right: 25px;
+}
+.login button{
+    background-color: red;
+    border-radius: 40%;
+    cursor: auto;
+}
