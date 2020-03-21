@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from './component/Component/Header/Header';
-import BannerField from './component/Component/BannerField/BannerField';
+import Header from './components/Header/Header';
+import Banner from './components/Banner/Banner';
 
 function App() {
   return (
     <div className="App">
-     <Header></Header>
-     <BannerField></BannerField>
+      <Header></Header>
+      <Banner></Banner>
     </div>
   );
 }
