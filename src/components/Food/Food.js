@@ -9,16 +9,15 @@ const Food = () => {
     //const item1 = items[4];
 
     return (
-        <div>
-            <div >
-                {
-              items.map(item=>
-              <Menus menus = {item}></Menus>
-              )
+        <div className='container'>
+            <div className='row'>
+              {
+              items.map(item=><Menus menus = {item}></Menus>)
             }
-            </div>
-            
         </div>
+        </div>
+        
+        
     );
 };
 
