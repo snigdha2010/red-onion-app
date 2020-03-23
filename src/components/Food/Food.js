@@ -1,19 +1,30 @@
 import React, { useState } from 'react';
 import data from '../../Data';
-import Menus from '../Menus/Menus';
+import './Food.css';
+import Breakfast from '../Breakfast/Breakfast';
 
 const Food = () => {
     const foodData = data;
     const [items,setItems]= useState(foodData)
-    console.log(items);
+
+    const breakfasts = items.filter((a)=>a.categories==='breakfast');
+    const lunch = items.filter((a)=>a.categories==='lunch');
+    console.log(lunch);
     //const item1 = items[4];
 
     return (
         <div className='container'>
-            <div className='row'>
-              {
-              items.map(item=><Menus menus = {item}></Menus>)
+            <div className='time'>
+                <a href="/breakfast">Breakfast</a>
+                <a href="/lunch">Lunch</a>
+                <a href="/dinner">Dinner</a>
+            </div>
+            <div className='row '>
+              {  
+              breakfasts.map(breakfast=>
+              <Breakfast menus = {breakfast}></Breakfast>)
             }
+            <button className='main-btn btn-secondary btn-lg '>Checkout Your Food</button>
         </div>
         </div>
         

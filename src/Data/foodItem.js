@@ -47,6 +47,13 @@ var foodItem = [
         description:'How we dream about our future',
         price:3.99,
         img:`${breakfast6}`
+    },
+    {
+        categories:'lunch',
+        itemname:'Full Breakfast Fried Egg Toast Brunch',
+        description:'How we dream about our future',
+        price:3.99,
+        img:`${breakfast2}`
     }
 
 
