@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import data from '../../Data';
 import './Food.css';
-import Breakfast from '../Breakfast/Breakfast';
+import { Link } from 'react-router-dom';
+import Menus from '../Menus/Menus';
 
 const Food = () => {
     const foodData = data;
     const [items,setItems]= useState(foodData)
 
     const breakfasts = items.filter((a)=>a.categories==='breakfast');
-    const lunch = items.filter((a)=>a.categories==='lunch');
-    console.log(lunch);
+    const lunches = items.filter((a)=>a.categories==='lunch');
+    console.log(lunches);
     //const item1 = items[4];
+   
 
     return (
         <div className='container'>
@@ -19,10 +21,17 @@ const Food = () => {
                 <a href="/lunch">Lunch</a>
                 <a href="/dinner">Dinner</a>
             </div>
-            <div className='row '>
-              {  
+
+        <div className='row '>
+              
+              {/* {  
               breakfasts.map(breakfast=>
-              <Breakfast menus = {breakfast}></Breakfast>)
+              <Menus menus = {breakfast}></Menus>)
+             } */}
+
+             {  
+              lunches.map(lunch=>
+              <Menus menus = {lunch}></Menus>)
             }
             <button className='main-btn btn-secondary btn-lg '>Checkout Your Food</button>
         </div>
