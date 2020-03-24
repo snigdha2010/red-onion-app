@@ -14,17 +14,17 @@ import Menus from './components/Breakfast/Breakfast';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Banner></Banner>
-      
+      {/* <Header></Header>
+      <Banner></Banner> */}
+      <Food></Food>
 
-      <Router>
+      {/* <Router>
         <Switch>
             <Route path = '/breakfast'>
-              <Food></Food>
+           
             </Route>
         </Switch>
-      </Router>
+      </Router> */}
     </div>
   );
 }
