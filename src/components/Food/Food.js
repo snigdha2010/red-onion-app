@@ -7,13 +7,17 @@ import FoodBanner from '../FoodBanner/FoodBanner';
 
 const Food = () => {
     const foodData = data;
-    const [curItem, setCurItem] = useState(['lunch']);
+    const [curItem, setCurItem] = useState('breakfast');
     const [items,setItems]= useState(foodData.filter(item=>
         item.categories == curItem ));
 
+       
     const handlecurItem = (product) =>{
-        //console.log("product",items);
+            console.log("product",product);
+
+            console.log("NewcurItem",curItem);
             setCurItem(product);
+            console.log("NewcurItem",curItem);
             setItems(foodData.filter(item=>item.categories == product ));
             //console.log("items",items);
     }
