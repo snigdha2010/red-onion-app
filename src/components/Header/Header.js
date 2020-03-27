@@ -13,8 +13,8 @@ const Header = () => {
                    <img className='align-items-start' src={logo} alt=""/>
                 </div>  
                  <div className='ml-auto login'> 
-                    <a href="">{cart}</a>
-                    <a href="">Login</a>
+                    < span>{cart}</ span>
+                    < span>Login</ span>
                     <button>Sign up</button>
                  </div> 
             </div>

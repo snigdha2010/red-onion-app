@@ -1,0 +1,16 @@
+.twinContainer{
+    display: flex;
+}
+.item-container{
+    padding: 20px;
+    margin: 50px;
+}
+.item-container button{
+    background-color: crimson;
+    border-radius: 10px;
+    width: 100px;
+}
+.img-container{
+    padding-left: 20px;
+    width: 700px;
+}
